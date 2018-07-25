@@ -3,15 +3,16 @@
 
 ---
 
-<p>Rancher-Server</p>
+<h2 id="rancher-server">Rancher-Server</h2>
 <p>Linode: 2GB / 1VCPU - $10.00 / month<br>
 RDS:  t2micro with 20gb ssd general purpose storage - $14.71 / month<br>
 Rancher-Host-1 (Rocket-chat) - Linode 8GB - $40.00 / Month<br>
 Rancher-Host-2 (Rocket-chat) - Linode 8GB - $40.00 / Month</p>
 <p>Rancher-staging-host-1 (rocket-chat staging) - Linode 2GB $10.00 / month</p>
 <p>Total Cost for rancher environment - $114.71</p>
-<p>Continous Integration:<br>
-Dockercloud - $7 / month with 1 private repo</p>
+<h2 id="continous-integration">Continous Integration:</h2>
+<p>Dockercloud - $7 / month with 1 private repo</p>
+<h2 id="server-config">Server-Config</h2>
 <p>Redundancy / Failover - All rocketchat hosts will be loadbalanced using HAProxy which will send traffic to nodes that are in an available state - healthchecks will be setup within Rancher</p>
 <p>Backups - Host backups handled by Linode, Mongo Backups handled by Atlas.</p>
 <p>Server Security - Best security practices will be used on all resources.   I will use UFW and IPtables to configure security on each host and rancher server.</p>
